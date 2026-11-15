@@ -1,0 +1,21 @@
+Snoozzo Privacy Policy
+
+Effective date: November 14, 2026
+Copyright 2026 Edward Dunn
+
+Snoozzo is a watch-only alarm app for Apple Watch. It is designed to work entirely on your device.
+
+What the app stores
+The app saves your alarms, wake settings (such as haptic intensity, pattern, snooze limits, and pre-alarm ramp), and local wake history (including streaks) on the Apple Watch. This information never leaves the device.
+
+What the app does not collect
+Snoozzo does not create an account, does not require a sign-in, and does not use iCloud, analytics, advertising, crash reporting, or any network connection. The app does not send information to Edward Dunn or to any third party.
+
+Permissions
+The app uses Apple Watch haptic and alarm/session features to deliver a vibration-only wake on your wrist. It does not access the microphone, camera, contacts, location, or Health data.
+
+Changes
+If this policy changes, the updated text will be posted at https://snoozzo.com/privacy once that domain is live.
+
+Contact
+For questions about this policy or the app, use https://snoozzo.com/support once that domain is live, or the support contact published with Snoozzo on the App Store.
