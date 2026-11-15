@@ -3,26 +3,27 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Snoozzo — Wake up without waking anyone else</title>
-  <meta name="description" content="Snoozzo is a watch-only alarm for Apple Watch. It vibrates on your wrist and doesn’t make a sound, so the person next to you can keep sleeping.">
+  <title>Snoozzo — You have to get up. They really don’t.</title>
+  <meta name="description" content="Snoozzo is a watch-only alarm for Apple Watch. It buzzes your wrist — no sound — then makes you prove you’re actually awake, so the person next to you can keep sleeping.">
   <link rel="canonical" href="https://erdtheturd.github.io/silent-alarm-buddy/">
   <link rel="icon" href="favicon.png" type="image/png" sizes="32x32">
   <link rel="icon" href="favicon.ico" sizes="any">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <meta name="theme-color" content="#f3eee6">
+  <meta name="theme-color" content="#15233A">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Snoozzo">
-  <meta property="og:title" content="Snoozzo — Wake up without waking anyone else">
+  <meta property="og:title" content="Snoozzo — You have to get up. They really don’t.">
   <meta property="og:description" content="A watch-only alarm for Apple Watch. It vibrates. It doesn’t make a sound.">
   <meta property="og:url" content="https://erdtheturd.github.io/silent-alarm-buddy/">
   <meta property="og:image" content="https://erdtheturd.github.io/silent-alarm-buddy/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Snoozzo — Wake up without waking anyone else">
+  <meta name="twitter:title" content="Snoozzo — You have to get up. They really don’t.">
   <meta name="twitter:description" content="A watch-only alarm for Apple Watch. It vibrates. It doesn’t make a sound.">
   <meta name="twitter:image" content="https://erdtheturd.github.io/silent-alarm-buddy/og-image.png">
-  <link rel="preload" href="fonts/source-sans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/newsreader.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/nunito.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -42,37 +43,145 @@
 
   <main id="main">
     <section class="hero">
-      <div class="wrap">
+      <div class="hero-sky" aria-hidden="true">
+        <svg viewBox="0 0 1280 800" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1148 70
+                   C1110 78, 1078 118, 1084 164
+                   C1090 212, 1136 246, 1188 244
+                   C1150 236, 1118 200, 1116 156
+                   C1114 112, 1136 80, 1148 70 Z"
+                fill="#F3E2B8"/>
+          <path d="M70 36 L74 50 L70 64 L66 50 Z M56 50 L70 46 L84 50 L70 54 Z" fill="#E8D9B0"/>
+          <path d="M200 28 L203 40 L200 52 L197 40 Z M188 40 L200 37 L212 40 L200 43 Z" fill="#D9CB9E"/>
+          <path d="M430 28 L433 40 L430 52 L427 40 Z M418 40 L430 37 L442 40 L430 43 Z" fill="#D9CB9E"/>
+          <path d="M620 22 L623 32 L620 42 L617 32 Z M608 32 L620 29 L632 32 L620 35 Z" fill="#E8D9B0"/>
+          <path d="M760 44 L763 56 L760 68 L757 56 Z M748 56 L760 53 L772 56 L760 59 Z" fill="#E8D9B0"/>
+          <path d="M980 30 L984 44 L980 58 L976 44 Z M966 44 L980 40 L994 44 L980 48 Z" fill="#C9B98A"/>
+          <path d="M1020 86 L1024 100 L1020 114 L1016 100 Z M1006 100 L1020 96 L1034 100 L1020 104 Z" fill="#E8D9B0"/>
+          <path d="M1228 48 L1231 60 L1228 72 L1225 60 Z M1216 60 L1228 57 L1240 60 L1228 63 Z" fill="#D9CB9E"/>
+          <path d="M1208 180 L1212 196 L1208 212 L1203 196 Z M1190 196 L1208 191 L1226 196 L1208 201 Z" fill="#E8D9B0"/>
+          <path d="M1088 40 L1091 50 L1088 60 L1085 50 Z M1076 50 L1088 47 L1100 50 L1088 53 Z" fill="#C9B98A"/>
+          <path d="M880 70 L885 86 L902 84 L890 96 L896 112 L880 102 L864 112 L870 96 L858 84 L875 86 Z" fill="#E8D9B0"/>
+          <path d="M160 28 L164 42 L178 39 L168 50 L173 64 L160 56 L147 64 L152 50 L142 39 L156 42 Z" fill="#D9CB9E"/>
+          <path d="M60 640 L63 652 L60 664 L57 652 Z M48 652 L60 649 L72 652 L60 655 Z" fill="#C9B98A"/>
+          <path d="M90 720 L94 736 L90 754 L85 736 Z M72 736 L90 731 L108 736 L90 741 Z" fill="#D9CB9E"/>
+          <path d="M240 760 L243 772 L240 784 L237 772 Z M228 772 L240 769 L252 772 L240 775 Z" fill="#C9B98A"/>
+          <path d="M400 730 L404 744 L418 741 L408 752 L413 766 L400 758 L387 766 L392 752 L382 741 L396 744 Z" fill="#E8D9B0"/>
+          <path d="M640 750 L644 764 L640 778 L636 764 Z M626 764 L640 760 L654 764 L640 768 Z" fill="#E8D9B0"/>
+          <path d="M820 740 L823 752 L820 764 L817 752 Z M808 752 L820 749 L832 752 L820 755 Z" fill="#C9B98A"/>
+          <path d="M1080 760 L1084 774 L1080 788 L1076 774 Z M1066 774 L1080 770 L1094 774 L1080 778 Z" fill="#D9CB9E"/>
+          <path d="M1248 360 L1252 374 L1248 388 L1244 374 Z M1234 374 L1248 370 L1262 374 L1248 378 Z" fill="#C9B98A"/>
+          <path d="M1260 520 L1263 532 L1260 544 L1257 532 Z M1248 532 L1260 529 L1272 532 L1260 535 Z" fill="#E8D9B0"/>
+          <path d="M1100 430 L1104 442 L1116 440 L1108 450 L1112 462 L1100 454 L1088 462 L1092 450 L1084 440 L1096 442 Z" fill="#D9CB9E"/>
+          <g stroke="#E8D9B0" stroke-width="1.8" stroke-linecap="round" fill="none">
+            <path d="M300 40 L298 56 M288 46 L312 48"/>
+            <path d="M540 36 L538 50 M530 42 L550 40"/>
+            <path d="M1260 80 L1258 94 M1250 86 L1270 84"/>
+            <path d="M1268 240 L1266 254 M1258 246 L1278 244"/>
+            <path d="M940 760 L942 774 M932 766 L954 764"/>
+            <path d="M500 770 L498 784 M490 776 L510 778"/>
+            <path d="M1220 620 L1222 634 M1214 626 L1232 624"/>
+          </g>
+          <circle cx="200" cy="48" r="2.2" fill="#E8D9B0"/>
+          <circle cx="700" cy="36" r="2" fill="#E8D9B0"/>
+          <circle cx="1160" cy="300" r="1.7" fill="#C9B98A"/>
+          <circle cx="990" cy="20" r="1.8" fill="#E8D9B0"/>
+        </svg>
+      </div>
+
+      <div class="wrap hero-inner">
         <div class="hero-copy">
-          <h1>Wake up without waking the person next to you.</h1>
-          <p class="lead">Snoozzo is a watch-only alarm for Apple Watch. It vibrates on your wrist. It doesn’t make a sound.</p>
+          <h1>You have to get up.<br><em>They really don’t.</em></h1>
+          <p class="lead">Snoozzo buzzes your Apple Watch — no sound — then makes you tap three lights so you can’t sneak back to sleep. The other pillow doesn’t need to know.</p>
           <p class="soon" aria-disabled="true">Coming soon to the App Store</p>
         </div>
-        <figure class="hero-product">
-          <div class="watch large">
-            <div class="watch-case">
-              <div class="watch-screen">
-                <img src="assets/screenshots/watch-feel.png" width="416" height="496" alt="The Wake feel screen in Snoozzo, showing intensity, rhythm, snooze, and a pre-alarm ramp, with Medium selected.">
-              </div>
-            </div>
-          </div>
-          <figcaption>How the buzz feels is up to you.</figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <section class="band">
-      <div class="wrap">
-        <div class="prose">
-          <h2>Most alarms wake the whole room.</h2>
-          <p>A phone on the nightstand doesn’t care who’s trying to sleep. Snoozzo stays on your Watch. At the time you set, you get a repeating buzz — no speaker, no ringtone, no song through the wall. Your partner, roommate, or sibling can keep sleeping.</p>
+        <div class="bed" aria-hidden="true">
+          <svg viewBox="0 0 620 540" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="312" cy="508" rx="230" ry="20" fill="#0E1A2C"/>
+            <path d="M108 390 L100 488" stroke="#3A1C14" stroke-width="10" stroke-linecap="round"/>
+            <path d="M516 392 L526 488" stroke="#3A1C14" stroke-width="10" stroke-linecap="round"/>
+            <path d="M148 470 L148 498" stroke="#3A1C14" stroke-width="8" stroke-linecap="round"/>
+            <path d="M474 472 L476 498" stroke="#3A1C14" stroke-width="8" stroke-linecap="round"/>
+            <path d="M86 338 C78 348, 76 400, 92 456 L530 458 C548 408, 546 350, 534 336 Z"
+                  fill="#6A3A28" stroke="#3A1C14" stroke-width="5" stroke-linejoin="round"/>
+            <path d="M90 430 C180 418, 430 422, 532 432" stroke="#4A2418" stroke-width="4" stroke-linecap="round" opacity=".7"/>
+            <path d="M96 250 C90 130, 130 86, 210 80 L410 76 C510 84, 536 130, 528 250"
+                  fill="#7A4634" stroke="#3A1C14" stroke-width="5.5" stroke-linejoin="round"/>
+            <path d="M150 118 C250 96, 380 98, 476 122" stroke="#C48868" stroke-width="3" stroke-linecap="round" opacity=".4"/>
+            <path d="M78 300
+                     C60 318, 68 390, 102 432
+                     C190 458, 300 448, 420 454
+                     C500 456, 560 430, 548 368
+                     C540 318, 500 292, 430 286
+                     C340 278, 230 304, 140 292
+                     Z"
+                  fill="#E39A45" stroke="#B56A1C" stroke-width="4.5" stroke-linejoin="round"/>
+            <path d="M150 350 C230 372, 330 340, 430 368" stroke="#C47A22" stroke-width="3" stroke-linecap="round" opacity=".5"/>
+            <path d="M200 400 C280 418, 360 396, 470 414" stroke="#C47A22" stroke-width="2.5" stroke-linecap="round" opacity=".4"/>
+            <path d="M118 188 C96 192, 92 236, 118 258 L250 268 C278 252, 276 198, 250 182 Z"
+                  fill="#F3E6C8" stroke="#C9AE86" stroke-width="3.5" stroke-linejoin="round"/>
+            <path d="M332 184 C312 186, 306 232, 334 256 L474 262 C502 244, 500 188, 470 176 Z"
+                  fill="#F0E0C0" stroke="#C9AE86" stroke-width="3.5" stroke-linejoin="round"/>
+            <ellipse cx="402" cy="236" rx="46" ry="42" fill="#E8B894" stroke="#B07858" stroke-width="2.5"/>
+            <path d="M368 214 C360 190, 390 176, 424 182 C450 186, 458 206, 448 220 C430 200, 400 198, 368 214 Z"
+                  fill="#3A2418" stroke="#2A1810" stroke-width="2"/>
+            <path d="M356 228 C348 236, 352 250, 364 252" stroke="#3A2418" stroke-width="6" stroke-linecap="round"/>
+            <path d="M386 236 C390 232, 396 232, 400 237" stroke="#5A3020" stroke-width="2.4" stroke-linecap="round"/>
+            <path d="M410 236 C414 231, 421 232, 425 238" stroke="#5A3020" stroke-width="2.4" stroke-linecap="round"/>
+            <circle cx="406" cy="250" r="3.2" fill="#B07858"/>
+            <path d="M350 268 C360 250, 430 250, 455 272" fill="#E39A45" stroke="#B56A1C" stroke-width="3"/>
+            <g fill="none" stroke="#F3E2B8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M448 150 L470 150 L450 176 L474 176"/>
+              <path d="M478 124 L508 124 L482 158 L512 158" stroke-width="2.6"/>
+              <path d="M516 92 L554 92 L520 134 L560 134" stroke-width="3.1"/>
+            </g>
+            <path d="M168 250 C150 258, 142 300, 152 328 C190 348, 250 344, 268 318 C276 290, 260 250, 230 242 Z"
+                  fill="#2F6B66" stroke="#1C4542" stroke-width="3.2" stroke-linejoin="round"/>
+            <path d="M198 228 L214 228 L216 250 L196 252 Z" fill="#E8B894" stroke="#B07858" stroke-width="2"/>
+            <ellipse cx="210" cy="196" rx="48" ry="50" fill="#F0C2A0" stroke="#B07858" stroke-width="2.6"/>
+            <path d="M166 190 C154 150, 186 128, 222 130 C258 132, 276 154, 268 184
+                     C254 160, 230 158, 200 164 C186 168, 174 178, 166 190 Z"
+                  fill="#4A2A18" stroke="#2A1810" stroke-width="2.2"/>
+            <path d="M158 200 C148 206, 150 224, 162 226" stroke="#4A2A18" stroke-width="8" stroke-linecap="round"/>
+            <path d="M232 136 L242 118" stroke="#4A2A18" stroke-width="5" stroke-linecap="round"/>
+            <path d="M190 198 C196 192, 206 192, 212 200" stroke="#3A2018" stroke-width="2.6" stroke-linecap="round"/>
+            <path d="M222 198 C228 191, 238 192, 244 200" stroke="#3A2018" stroke-width="2.6" stroke-linecap="round"/>
+            <circle cx="202" cy="202" r="2.4" fill="#2A1810"/>
+            <circle cx="234" cy="202" r="2.4" fill="#2A1810"/>
+            <path d="M208 218 C216 224, 226 222, 232 218" stroke="#A06850" stroke-width="2.3" stroke-linecap="round"/>
+            <path d="M160 280 C130 300, 122 336, 148 350" stroke="#2F6B66" stroke-width="22" stroke-linecap="round"/>
+            <path d="M148 350 C156 358, 170 356, 176 346" stroke="#E8B894" stroke-width="14" stroke-linecap="round"/>
+            <path d="M256 278 C300 250, 318 230, 328 200" stroke="#2F6B66" stroke-width="20" stroke-linecap="round"/>
+            <path d="M328 200 C334 184, 330 170, 320 164" stroke="#E8B894" stroke-width="13" stroke-linecap="round"/>
+            <ellipse cx="316" cy="156" rx="13" ry="11" fill="#E8B894" stroke="#B07858" stroke-width="1.8" transform="rotate(-20 316 156)"/>
+            <g transform="translate(328 198) rotate(-18)">
+              <rect x="-13" y="-16" width="26" height="32" rx="8" fill="#2A1810" stroke="#1A0E0A" stroke-width="2"/>
+              <rect x="-9" y="-11" width="18" height="22" rx="5" fill="#F4D27A"/>
+              <rect x="-8" y="-22" width="16" height="8" rx="2" fill="#2A1810"/>
+              <rect x="-8" y="14" width="16" height="8" rx="2" fill="#2A1810"/>
+            </g>
+            <g stroke="#F3C36A" stroke-width="3" stroke-linecap="round" fill="none">
+              <path d="M350 168 L362 156"/>
+              <path d="M358 186 L376 182"/>
+              <path d="M350 206 L364 218"/>
+            </g>
+          </svg>
         </div>
       </div>
     </section>
 
-    <section class="band alt" id="how">
+    <section class="band tint">
       <div class="wrap">
         <div class="prose">
+          <h2>Most alarms will happily wake the whole bed.</h2>
+          <p>A phone on the nightstand doesn’t care who’s still trying to sleep. Snoozzo stays on your Watch. At the time you set, you get a repeating buzz — no speaker, no ringtone, no song through the wall. Your partner, roommate, or sibling can keep sleeping.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="band" id="how">
+      <div class="wrap how-grid">
+        <div>
           <h2>How it works</h2>
           <ol class="steps">
             <li>
@@ -80,43 +189,36 @@
               There’s no iPhone app to keep open. Open Snoozzo on the Watch within 36 hours of the alarm so it can arm.
             </li>
             <li>
-              <strong>It buzzes. That’s it.</strong>
-              If you turn on the pre-alarm, a soft crescendo starts a few minutes early. At the set time, the Watch keeps a repeating buzz going until you tap I’m up. You can cap how many snoozes you get, or turn snooze off.
+              <strong>It buzzes. That’s the whole announcement.</strong>
+              If you turn on the pre-alarm, a soft crescendo starts a few minutes early. At the set time, the Watch keeps buzzing until you tap I’m up. You can cap how many snoozes you get, or turn snooze off.
             </li>
             <li>
-              <strong>Then it checks that you’re actually up.</strong>
+              <strong>Then it checks you’re actually up.</strong>
               It asks you to tap three lights in the order they lit up — so you can’t just dismiss it and roll over. About three minutes later it asks again. Miss either check, and the buzzing comes back.
             </li>
           </ol>
         </div>
-      </div>
-    </section>
-
-    <section class="band">
-      <div class="wrap split">
-        <div class="prose">
-          <h2>Your morning, on your Watch.</h2>
-          <p>You can set the buzz to Soft, Medium, or Strong, and pick a Pulse, Wave, or Double pattern. A wake streak counts only the mornings you finish both checks. Alarms, settings, and that history stay on the Watch.</p>
-        </div>
         <!-- TODO: swap in final App Store screenshots from ~/.erd/asc/Snoozzo/screenshots/ when they are ready. -->
-        <figure class="hero-product">
+        <figure class="watch-wrap">
           <div class="watch">
-            <div class="watch-case">
-              <div class="watch-screen">
-                <img src="assets/screenshots/watch-streak.png" width="416" height="496" alt="The Streak screen in Snoozzo, showing a zero-day streak and a prompt to complete a wake and its re-check to begin.">
-              </div>
+            <div class="band-top"></div>
+            <div class="bezel">
+              <img src="assets/screenshots/watch-feel.png" width="416" height="496" alt="The Wake feel screen in Snoozzo, showing intensity, rhythm, snooze, and a pre-alarm ramp, with Medium selected.">
+              <span class="crown"></span>
+              <span class="side-btn"></span>
             </div>
+            <div class="band-bot"></div>
           </div>
-          <figcaption>Streaks stay on the Watch.</figcaption>
+          <figcaption class="watch-caption">How the buzz feels is up to you.</figcaption>
         </figure>
       </div>
     </section>
 
-    <section class="band alt">
+    <section class="band tint">
       <div class="wrap">
         <div class="prose">
-          <h2>Nothing leaves your Watch.</h2>
-          <p>Snoozzo doesn’t create an account and doesn’t use the network. Your alarms, feel settings, and wake history are stored on the device. There’s nothing to sign into, and nothing is sent to Edward Dunn or anyone else. The details are in the <a href="privacy.html">privacy policy</a>.</p>
+          <h2>No account. Nothing leaves the Watch.</h2>
+          <p>Snoozzo doesn’t create an account and doesn’t use the network. Your alarms, feel settings, and wake history stay on the device. There’s nothing to sign into, and nothing is sent to Edward Dunn or anyone else. The details are in the <a href="privacy.html">privacy policy</a>.</p>
         </div>
       </div>
     </section>
@@ -126,12 +228,18 @@
         <div class="faq">
           <h2>A few questions</h2>
           <h3>Does it work without the iPhone nearby?</h3>
-          <p>Snoozzo runs on the Watch — there’s no iPhone app to keep open. Open Snoozzo on your Watch within 36 hours of the alarm so it can arm. Once it’s armed, the Watch handles the wake itself.</p>
+          <p>Yep. Snoozzo runs on the Watch — there’s no iPhone app to keep open. Open Snoozzo on your Watch within 36 hours of the alarm so it can arm. Once it’s armed, the Watch handles the wake itself.</p>
           <h3>What if my Watch dies overnight?</h3>
           <p>You only feel the alarm if the Watch is on your wrist and has enough battery to last the night. Charge it before bed. If it’s on the charger or the nightstand, you won’t feel a thing.</p>
           <h3>Does it make any sound?</h3>
-          <p>No. There’s no speaker and no ringtone. Just haptics.</p>
+          <p>None. No speaker, no ringtone. Just a buzz on your wrist.</p>
         </div>
+      </div>
+    </section>
+
+    <section class="closer">
+      <div class="wrap">
+        <p class="soon" aria-disabled="true">Coming soon to the App Store</p>
       </div>
     </section>
   </main>
